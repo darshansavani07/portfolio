@@ -8,8 +8,25 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import p1 from "../../Assets/Projects/p1.png"
+import p2 from "../../Assets/Projects/p2.png"
+import p3 from "../../Assets/Projects/p3.png"
+import p4 from "../../Assets/Projects/p4.png"
+import p5 from "../../Assets/Projects/p5.png"
+import a1 from "../../Assets/Projects/a1.png"
+import a2 from "../../Assets/Projects/a2.png"
+import a3 from "../../Assets/Projects/a3.png"
+import a4 from "../../Assets/Projects/a4.png"
+import a5 from "../../Assets/Projects/a5.png"
+import a6 from "../../Assets/Projects/a6.png"
+import h1 from "../../Assets/Projects/h1.png"
+import h2 from "../../Assets/Projects/h2.png"
+import h3 from "../../Assets/Projects/h3.png"
 
 function Projects() {
+  const prithviImg = [p1, p2, p3, p4, p5]
+  const ampliTeach = [a1, a2, a3, a4, a5, a6]
+  const hive = [h1, h2, h3]
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -20,71 +37,37 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "center", paddingBottom: "10px", display: 'flex', flexDirection: 'column' }}>
+          <Col className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ampliTeach}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Ampli Teach"
+              description="AmpliTeach is the Music Studio Platform, You can Manage your Schedule, Students and Billing, Keep your Students Engaged and Learning, Tools to Grow as big as you can Dream! nothing else even comes close! You can Watch your business grow while you do less work. Everything you need to grow and take control."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={prithviImg}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="RummyXL"
+              description="It is a rummyXL game admin panel. You can basically do a cms work from it. You can check a daily user addition, approve or reject withdrawal, upi, pan details and many more. owner can also see every table's member, card and wild cards of every round."
+              ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://chatify-49.web.app/"
+            />
+          </Col>
+
+          <Col className="project-card">
+            <ProjectCard
+              imgPath={hive}
+              isBlog={false}
+              title="Hive"
+              description="It is a landing page of hive. which is mainly focused in medical line analytics of data. This is totally graphical representation of data which includes pie, XY, radar, gauge charts and many more. It represent the scheduled appointment, insaurance, phoneflow, scheduling report etc. We have used amchart for the graphical representation."
               ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
         </Row>
