@@ -13,7 +13,7 @@ function ProjectCards(props) {
         <div>
           {props.imgPath.map((data, index) => {
             return (
-              <Image width={390} height={200} src={data} style={{padding: '2px'}}/>
+              <Image height={200} src={data} style={{ padding: '2px' }} />
             )
           })}
         </div>

@@ -35,7 +35,7 @@ function Footer() {
               <a
                 href="https://twitter.com/Darshan0710?t=N0QDGwO8H1bZsRJ4P5m7gw&s=09"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-icons"
               >
@@ -46,7 +46,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/darshan-savani-631515176"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-icons"
               >
@@ -57,7 +57,7 @@ function Footer() {
               <a
                 href="https://instagram.com/darshan_savani_07?igshid=ZDdkNTZiNTM="
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-icons"
               >
